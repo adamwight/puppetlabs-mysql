@@ -92,4 +92,9 @@ class mysql::server::config {
       }
     }
   }
+
+  file { '/etc/rc.conf.d/mysql':
+    ensure => present,
+    content => template('mysql/rc.conf.erb'),
+  }
 }

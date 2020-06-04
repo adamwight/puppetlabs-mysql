@@ -89,4 +89,9 @@ class mysql::server::config {
                 if you are forced to use a mysql version compiled without SSL support',
     }
   }
+
+  file { '/etc/rc.conf.d/mysql':
+    ensure => present,
+    content => template('mysql/rc.conf.erb'),
+  }
 }

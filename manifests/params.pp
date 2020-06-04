@@ -328,8 +328,8 @@ class mysql::params {
     }
 
     'FreeBSD': {
-      $client_package_name = 'databases/mysql57-client'
-      $server_package_name = 'databases/mysql57-server'
+      $client_package_name = 'databases/mariadb104-client'
+      $server_package_name = 'databases/mariadb104-server'
       $basedir             = '/usr/local'
       $config_file         = '/usr/local/etc/my.cnf'
       $includedir          = '/usr/local/etc/my.cnf.d'

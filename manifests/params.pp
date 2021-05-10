@@ -283,7 +283,7 @@ class mysql::params {
       $client_package_name = 'databases/mariadb114-client'
       $server_package_name = 'databases/mariadb114-server'
       $basedir             = '/usr/local'
-      $config_file         = '/usr/local/etc/my.cnf'
+      $config_file         = '/usr/local/etc/mysql/conf.d/server.cnf'
       $includedir          = '/usr/local/etc/my.cnf.d'
       $datadir             = '/var/db/mysql'
       $log_error           = '/var/log/mysqld.log'

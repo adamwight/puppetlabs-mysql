@@ -291,7 +291,7 @@ class mysql::params {
       $root_group          = 'wheel'
       $mysql_group         = 'mysql'
       $server_service_name = 'mysql-server'
-      $socket              = '/var/db/mysql/mysql.sock'
+      $socket              = '/var/run/mysql/mysql.sock'
       $ssl_ca              = undef
       $ssl_cert            = undef
       $ssl_key             = undef
